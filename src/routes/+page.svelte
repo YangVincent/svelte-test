@@ -2,12 +2,21 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+        import App from './App.svelte';
+
+        // const app = new App({
+        //     target: document.body,
+        //     props: {
+        //         answer: 42
+        //     }
+        // });
 </script>
 
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
+<App></App>
 
 <section>
 	<h1>
@@ -18,7 +27,7 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		to your new<br />SvelteKit app??
 	</h1>
 
 	<h2>
